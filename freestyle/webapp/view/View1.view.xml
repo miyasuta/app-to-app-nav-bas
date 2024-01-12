@@ -1,0 +1,36 @@
+<mvc:View controllerName="freestyle.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Table id="table" 
+            items="{path: '/Orders'}" mode="SingleSelectLeft">
+            <headerToolbar>
+            <OverflowToolbar id="_IDGenOverflowToolbar1">
+                <content>
+                <Title id="_IDGenTitle1" text="Orders" />
+                <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                <Button id="_IDGenButton1" text="Nav to Customer" press="onNavToCustomer" />   
+                </content>
+            </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+            <Column id="_IDGenColumn1">
+                <Text id="_IDGenText1" text="Order ID"/>
+            </Column>
+            <Column id="_IDGenColumn2">
+                <Text id="_IDGenText2" text="Order Date"/>
+            </Column>   
+            <Column id="_IDGenColumn3">
+                <Text id="_IDGenText3" text="Customer ID"/>
+            </Column>                        
+            </columns>
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem1">
+                    <Text id="_IDGenText4" text="{OrderID}"/>
+                    <Text id="_IDGenText5" text="{path: 'OrderDate', type: 'sap.ui.model.odata.type.DateTime'}"/>
+                    <Text id="_IDGenText6" text="{CustomerID}"/>
+                </ColumnListItem>    
+            </items>  
+        </Table>                
+    </Page>
+</mvc:View>

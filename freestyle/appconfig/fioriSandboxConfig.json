@@ -1,0 +1,9 @@
+{
+  "applications": {
+    "Customers-display": {
+      "additionalInformation": "SAPUI5.Component=fecustomers",
+      "applicationType": "URL",
+      "url": "../resources/fecustomers"
+    }
+  }
+}
